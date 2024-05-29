@@ -1,9 +1,8 @@
 {
-
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 7,
    "id": "194996d3-b5b7-44a1-b98d-f12bd8549745",
    "metadata": {},
    "outputs": [
@@ -22,7 +21,7 @@
        "        "
       ],
       "text/plain": [
-       "<IPython.lib.display.IFrame at 0x203916a6a10>"
+       "<IPython.lib.display.IFrame at 0x20391846a10>"
       ]
      },
      "metadata": {},
@@ -40,6 +39,7 @@
     "from docx import Document\n",
     "from reportlab.lib.pagesizes import letter\n",
     "from reportlab.pdfgen import canvas\n",
+    "from dash import Dash, html, dcc\n",
     "\n",
     "# إعداد الاتصال بقاعدة البيانات باستخدام SQLAlchemy\n",
     "connection_string = \"mssql+pyodbc://PDASYNC:PDASYNC@52.174.138.11/SBDBLIVE2?driver=ODBC+Driver+18+for+SQL+Server&TrustServerCertificate=yes\"\n",
