@@ -1,10 +1,9 @@
 {
-
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 5,
-   "id": "194996d3-b5b7-44a1-b98d-f12bd8549745",
+   "execution_count": 1,
+   "id": "ff983cb5-3c3f-49b1-9aac-61c33e538dd6",
    "metadata": {},
    "outputs": [
     {
@@ -14,7 +13,7 @@
        "        <iframe\n",
        "            width=\"100%\"\n",
        "            height=\"650\"\n",
-       "            src=\"http://127.0.0.1:8051/\"\n",
+       "            src=\"http://127.0.0.1:8050/\"\n",
        "            frameborder=\"0\"\n",
        "            allowfullscreen\n",
        "            \n",
@@ -22,7 +21,7 @@
        "        "
       ],
       "text/plain": [
-       "<IPython.lib.display.IFrame at 0x203916a6a10>"
+       "<IPython.lib.display.IFrame at 0x224661b8210>"
       ]
      },
      "metadata": {},
@@ -242,13 +241,13 @@
     "    return dcc.send_bytes(output.getvalue(), \"data.pdf\")\n",
     "\n",
     "if __name__ == '__main__':\n",
-    "    app.run_server(debug=True, port=8051, use_reloader=False)\n"
+    "    app.run_server(debug=True, use_reloader=False)\n"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": None,
-   "id": "3432ffde-98dc-46e5-b388-24e6d59b5fd7",
+   "id": "4fdc16e8-a1c2-4ff3-ad6f-24a00c0794d3",
    "metadata": {},
    "outputs": [],
    "source": []
